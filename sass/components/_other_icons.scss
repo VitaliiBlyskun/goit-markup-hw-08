@@ -1,0 +1,28 @@
+.envelope {
+    margin-right: 10px;
+    fill: currentColor;
+  
+    &:hover,
+    &:focus {
+      fill: currentColor;
+    }
+}
+  
+.smartphone {
+    margin-right: 10px;
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+      fill: currentColor;
+    } 
+}
+
+.modal-close-icon{
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+.modal__close-btn:hover &{
+    fill: var(--accent-color);
+}
+} 

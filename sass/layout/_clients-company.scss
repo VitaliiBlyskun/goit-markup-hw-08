@@ -1,0 +1,40 @@
+.clients-company {
+    display: flex;
+    justify-content: space-between;
+}
+       
+.clients-company__wrapper {
+    display: flex;
+    background-color: var(--header-color);
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    height: 92px;
+    width: 170px;
+    display: flex;
+    color: #AFB1B8;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+      border-radius: 4px; 
+      color: var(--accent-color);
+    }
+}
+    
+      
+.clients-list__icon {
+    fill: currentColor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+    fill: currentColor;
+    }
+}
+  

@@ -1,0 +1,32 @@
+.advantages{
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages__item {
+width: 270px;
+}
+
+.advantages__properties {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+  
+.advantages__description {
+    line-height: 1.71;
+    color: var(--description-color);
+}
+
+.advantages__icons:not(:last-child) {
+    display: flex;
+    background-color: var(--portfolio-btn-color);
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}

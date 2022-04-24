@@ -1,0 +1,16 @@
+.hero {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+      ),
+    url(../image/hero-bg.png);
+    background-color: var(--hero-footer-backround);
+    padding-bottom: 200px;
+    padding-top: 200px;
+    text-align: center;
+    max-width: 1600px;
+    background-size: cover;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    height: 600px;
+  }
