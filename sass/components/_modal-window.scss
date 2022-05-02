@@ -33,7 +33,7 @@
         cursor: pointer;
 }
 
-.modal{
+.modal {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -42,12 +42,12 @@
         background: var(--header-color);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
-}  
+} 
 
 .modal__form-name {
         font-weight: 700;
         font-size: 20px;
-        line-height: 1.2;
+        line-height: 1.5;
         text-align: center;
         margin-bottom: 12px;
         margin-top: auto;      
@@ -76,7 +76,6 @@
 .modal__form-contact {
         width: 100%;
         height: 40px;
-        padding-left: 42px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         box-sizing: border-box;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -115,22 +114,19 @@
 }
 
 .modal__form-agree {
-        width: 425px;
+        width: 370px;
         height: 24px;
-        display: flex;
         margin: 0 auto;
         margin-bottom: 30px;
         display: flex;
 }
 
-
 .modal__user-agree {
-        font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         display: flex;
         align-items: baseline;
-        line-height: 1.7;
+        line-height: 1.2;
         color: var(--description-color);
 
     &:before{
@@ -160,10 +156,19 @@
 
 .modal__link {
         font-weight: 400;
-        font-size: 14px;
-        line-height: 1.7;    
+        font-size: 12px;
+        line-height: 1.2;    
         color: var(--accent-color);
         text-decoration: underline;
+}
+
+.modal__form-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 4px;
+    letter-spacing: 0.01em;
+    color: var(--description-color);
 }
 
 .modal__form-btn {
@@ -190,13 +195,23 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-  
 
-.modal__form-label {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.2;
-    margin-bottom: 4px;
-    letter-spacing: 0.01em;
-    color: var(--description-color);
+@media screen and (min-width: 1200px) {
+    .modal__form-name {
+        line-height: 1.2;
+    }
+
+    .modal__form-agree {
+        width: 425px;
+    }
+
+    .modal__user-agree {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .modal__link {
+        font-size: 14px;
+        line-height: 1.7;    
+    }
 }

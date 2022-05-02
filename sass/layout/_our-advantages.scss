@@ -1,16 +1,12 @@
-.advantages{
-    display: flex;
-    justify-content: space-between;
-}
-
 .advantages__item {
-width: 270px;
+    width: 450px;
 }
 
 .advantages__properties {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
+    text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -20,13 +16,89 @@ width: 270px;
     color: var(--description-color);
 }
 
-.advantages__icons:not(:last-child) {
+.advantages__icons {
     display: flex;
     background-color: var(--portfolio-btn-color);
-    width: 270px;
+    width: 450px;
     height: 120px;
     justify-content: center;
     align-items: center;
-    margin-right: 30px;
     margin-bottom: 30px;
 }
+
+
+@media screen and (max-width: 767px) {
+    .advantages__description {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .advantages {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .advantages__item {
+        width: 354px;
+        margin-bottom: 30px;
+    }
+
+    .advantages__icons {
+        width: 354px;
+        margin-bottom: 30px;
+    }
+
+    .advantages__properties {
+        text-align: start;
+    }
+
+    .advantages__description {
+        max-width: 354px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .advantages {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .advantages__item {
+        width: 270px;
+    }
+
+    .advantages__icons:not(:last-child) {
+        width: 270px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+// .advantages__properties {
+//     font-size: 14px;
+//     font-weight: 700;
+//     line-height: 1.14;
+//     text-transform: uppercase;
+//     margin-bottom: 10px;
+// }
+  
+// .advantages__description {
+//     line-height: 1.71;
+//     color: var(--description-color);
+// }
+
+// .advantages__icons:not(:last-child) {
+//     display: flex;
+//     background-color: var(--portfolio-btn-color);
+//     width: 270px;
+//     height: 120px;
+//     justify-content: center;
+//     align-items: center;
+//     margin-right: 30px;
+//     margin-bottom: 30px;
+// }

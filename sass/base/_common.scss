@@ -3,7 +3,7 @@
 }
 
 h1,
- h2,
+h2,
 h3,
 h4,
 h5,
@@ -20,7 +20,22 @@ ol {
     padding-left: 0;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+
+body {
+  font-family:'Roboto', 'Raleway', sans-serif;
+  color: var(--body-color);
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}

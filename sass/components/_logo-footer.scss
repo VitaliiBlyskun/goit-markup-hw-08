@@ -3,8 +3,27 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--header-color);
   display: block;
   margin-bottom: 20px; 
+}
+
+@media screen and (max-width: 767px) {
+  .logo-footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo-footer {
+    margin-left: 100px;
+    margin-right: 234px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
