@@ -186,7 +186,7 @@ body {
   border-radius: 2px;
   background-color: var(--accent-color);
   left: 0;
-  bottom: -3px;
+  bottom: -1px;
   opacity: 1;
 }
 
@@ -236,7 +236,7 @@ body {
     display: none;
   }
   .mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -481,6 +481,7 @@ body {
 }
 
 .portfolio__img {
+  display: block;
   width: 450px;
   height: 294px;
 }
@@ -660,9 +661,6 @@ body {
     margin-left: 61px;
     margin-right: 165px;
   }
-  .footer__invitation {
-    margin-top: 5px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -688,8 +686,8 @@ body {
   .footer__adress_retreats:last-child {
     margin-bottom: 0;
   }
-  .footer__invitation_container {
-    margin-right: 93px;
+  .footer__invitation {
+    text-align: left;
   }
 }
 
@@ -801,6 +799,9 @@ body {
   }
   .footer-form__name {
     text-align: start;
+  }
+  .footer-form {
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

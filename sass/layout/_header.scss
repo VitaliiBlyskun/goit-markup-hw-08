@@ -35,7 +35,7 @@
     border-radius: 2px;
     background-color: var(--accent-color);
     left: 0;
-    bottom: -3px;
+    bottom: -1px;
     opacity: 1;
 }
 
@@ -77,12 +77,9 @@
     }
 }
 
-@media screen and (max-width: 1199px) {
-}
-
 
 @media screen and (max-width: 767px) {
-    .header{
+    .header {
         position: relative;
         padding-top: 16px;
         padding-bottom: 16px;
@@ -97,7 +94,7 @@
     }
 
     .mobile-menu {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -135,7 +132,6 @@
         color: var(--accent-color);
     }
 
-
     .mobile-menu__nav_margin-studio {
         margin-bottom: 36px;
     }
@@ -167,11 +163,11 @@
         text-decoration: none;
     }
 
-    .mobile-menu_contacts_margin-between{
+    .mobile-menu_contacts_margin-between {
         margin-bottom: 32px;
     }
 
-    .mobile-menu__social{
+    .mobile-menu__social {
         display: flex;
         margin-left: 15px;
         margin-right: 83px;
@@ -193,11 +189,11 @@
         padding-left: 10px;
     }
    
-    .mobile-menu__social_border-last{
+    .mobile-menu__social_border-last {
         padding-left: 10px;
     }
 
-    .mobile-menu-btn{
+    .mobile-menu-btn {
         background-color: transparent;
         border: none;
         padding: 0;
@@ -209,7 +205,7 @@
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
-      }
+    }
     
     .mobile-menu__close-btn {
         position: absolute;
@@ -228,7 +224,7 @@
         }
     }
     
-    .mobile-menu__container{
+    .mobile-menu__container {
         position: relative;
         padding-top: 48px;
         padding-bottom: 48px;
@@ -273,94 +269,3 @@
 
 
 
-
-
-// .header__container {
-//     display:flex;
-//     align-items: center;
-// }
-
-
-// .header__list поділив на 2 стилі бо на деск і таблет різняться {
-//     display: flex;
-//     align-items: baseline;
-//     margin-left: auto;
-// }
-
-
-// img {
-//    display: block;
-//    max-width: 100%;
-//    height: auto;
-// }
-
-// .header {
-//    background-color: var(--header-color);
-//    border-bottom: 1px solid #E5E5E5;
-// }
-
-// .header__navigation {
-//     display: flex;
-//     align-items: center;
-// }
-
-// .header__navigation_margin:not(:last-child) {
-//     margin-right: 50px;
-// }
-
-// .header__contacts_margin {
-//     margin-right: 50px;
-// }
-
-// .header__elements {
-//     display: block;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     color: var(--body-color);
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//     position: relative;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
-// // -як ставити &(аперсант) позаду селектора, якщо вони знаходяться на одному рівні вкладеності???
-// .header__elements_current{
-//     color: var(--accent-color);
-// }
-
-// .header__elements_current::after{
-//     content:'';
-//     position: absolute;
-//     width: 100%;
-//     height: 4px;
-//     border-radius: 2px;
-//     background-color: var(--accent-color);
-//     left: 0;
-//     bottom: -3px;
-//     opacity: 1;
-//   }
-
-// //   не получаєся поставити бо є пробел
-
-// .header__contacts { 
-//     display: flex;
-//     align-items: center;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     color: var(--description-color);
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-
-//     &:hover,
-//     &:focus {
-//     color: var(--accent-color);
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//     }
-// }
- 

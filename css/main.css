@@ -186,7 +186,7 @@ body {
   border-radius: 2px;
   background-color: var(--accent-color);
   left: 0;
-  bottom: -3px;
+  bottom: -1px;
   opacity: 1;
 }
 
@@ -236,7 +236,7 @@ body {
     display: none;
   }
   .mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -566,7 +566,10 @@ body {
   }
   .work-direction__elements {
     position: absolute;
-    width: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 70px;
     background: rgba(47, 48, 58, 0.8);
     bottom: 0;
@@ -579,8 +582,6 @@ body {
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--header-color);
-    padding-left: 83px;
-    padding-top: 27px;
   }
 }
 
@@ -594,6 +595,10 @@ body {
 
 .employee-team {
   background-color: var(--portfolio-btn-color);
+}
+
+.employee-team__card {
+  margin-bottom: 30px;
 }
 
 .employee-team__wrapper {
@@ -622,11 +627,15 @@ body {
 }
 
 .employee__img {
+  display: block;
   width: 450px;
   height: 460px;
 }
 
 @media screen and (min-width: 768px) {
+  .employee-team__card:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
   .employee__img {
     width: 354px;
     height: 374px;
@@ -639,6 +648,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .employee-team__card {
+    margin-bottom: 0;
+  }
   .employee__img {
     width: 270px;
     height: 260px;
@@ -818,9 +830,6 @@ body {
     margin-left: 61px;
     margin-right: 165px;
   }
-  .footer__invitation {
-    margin-top: 5px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -846,8 +855,8 @@ body {
   .footer__adress_retreats:last-child {
     margin-bottom: 0;
   }
-  .footer__invitation_container {
-    margin-right: 93px;
+  .footer__invitation {
+    text-align: left;
   }
 }
 
@@ -960,6 +969,9 @@ body {
   .footer-form__name {
     text-align: start;
   }
+  .footer-form {
+    margin-right: 0;
+  }
 }
 
 .backdrop {
@@ -970,7 +982,8 @@ body {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {

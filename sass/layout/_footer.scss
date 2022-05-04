@@ -66,10 +66,6 @@
         margin-left: 61px;  
         margin-right: 165px;      
     } 
-    
-    .footer__invitation {
-        margin-top: 5px;
-    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -101,8 +97,8 @@
         margin-bottom: 0;
     }
 
-    .footer__invitation_container{
-        margin-right: 93px;
+    .footer__invitation {
+        text-align: left;
     }
     
 }
