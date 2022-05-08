@@ -1,5 +1,5 @@
 .advantages__item {
-    width: 450px;
+    max-width: 450px;
 }
 
 .advantages__properties {
@@ -19,7 +19,7 @@
 .advantages__icons {
     display: flex;
     background-color: var(--portfolio-btn-color);
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     justify-content: center;
     align-items: center;

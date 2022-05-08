@@ -87,16 +87,16 @@
 
     .footer__adress_retreats {
         text-align: left;
-    }
 
-    .footer__adress_retreats:not(:last-child) {
-        margin-bottom: 9px;
+        &:not(:last-child) {
+            margin-bottom: 9px;
+        }
+    
+        &:last-child {
+        margin-bottom: 0;
+        }
     }
     
-    .footer__adress_retreats:last-child {
-        margin-bottom: 0;
-    }
-
     .footer__invitation {
         text-align: left;
     }

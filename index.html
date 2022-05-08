@@ -72,23 +72,27 @@
 
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
-          <button class="mobile-menu__close-btn" data-menu-close>
+        <button class="mobile-menu__close-btn" data-menu-close>
             <svg class="mobile-menu__close-icon" width="40px" height="40px">
               <use href="./image/icons.svg#icon-close-btn"></use>
             </svg>
           </button>
 
-          <ul class="mobile-menu__nav">
+          <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__nav_list">
             <li class="mobile-menu__nav_margin-studio">
-              <a class="mobile-menu__nav_list mobile-menu__nav_list-current" href="">Студия</a>
+              <a class="mobile-menu__nav_link mobile-menu__nav_link-current" href="">Студия</a>
             </li>
             <li class="mobile-menu__nav_margin-portfolio">
-              <a class="mobile-menu__nav_list" href="./portfolio.html">Портфолио</a>
+              <a class="mobile-menu__nav_link" href="./portfolio.html">Портфолио</a>
             </li>
             <li>
-              <a class="mobile-menu__nav_list" href="">Контакты</a>
+              <a class="mobile-menu__nav_link" href="">Контакты</a>
             </li>
-          </ul>
+          </ul>         
+          </nav>
+
+          <div class="mobile-menu__item">
 
           <ul class="mobile-menu_contacts">
             <li class="mobile-menu_contacts_margin-between">
@@ -102,7 +106,7 @@
           </ul>
 
           <ul class="mobile-menu__social">
-            <li class="mobile-menu__social_border">
+            <li class="mobile-menu__social_border-first">
               <a class="mobile-menu__social_list" href="">Instagram</a>
             </li>
             <li class="mobile-menu__social_border">
@@ -115,6 +119,7 @@
               <a class="mobile-menu__social_list" href="">LinkedIn</a>
             </li>
           </ul>
+        </div>
         </div>
       </div>
     </header>
@@ -184,6 +189,7 @@
         </div>
       </div>
     </section>
+
     <section class="section work-direction"> 
       <div class="container">
         <h2 class="second-title">Чем мы занимаемся</h2>
@@ -236,6 +242,7 @@
         </ul>
       </div>
     </section>
+
     <section class="section employee-team">
       <div class="container">
         <h2 class="second-title">Наша команда</h2>
@@ -483,6 +490,7 @@
         </ul>
       </div>
     </section>
+
     <section class="section">
       <div class="container">
         <h2 class="second-title">
@@ -535,6 +543,7 @@
       </div>  
     </section>
   </main>
+  
     <footer class="footer"> 
     <div class="footer__box container">  
       <div class="footer__adress"> 
@@ -666,9 +675,11 @@
               class="modal__checkbox visually-hidden"
               required
             />
-            <label for="user-agree" class="modal__user-agree"
-              >Соглашаюсь с рассылкой и принимаю&nbsp;
+            <label for="user-agree" class="modal__user-agree">
+              <span>
+              Соглашаюсь с рассылкой и принимаю&nbsp;
               <a href="" class="modal__link">Условия договора</a>
+              </span>
             </label>
           </div>
 

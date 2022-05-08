@@ -68,23 +68,29 @@
 
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
-          <button class="mobile-menu__close-btn" data-menu-close>
+        <button class="mobile-menu__close-btn" data-menu-close>
             <svg class="mobile-menu__close-icon" width="40px" height="40px">
               <use href="./image/icons.svg#icon-close-btn"></use>
             </svg>
           </button>
-          
-          <ul class="mobile-menu__nav">
+
+          <nav class="mobile-menu__nav">
+
+          <ul class="mobile-menu__nav_list">
             <li class="mobile-menu__nav_margin-studio">
-              <a class="mobile-menu__nav_list" href="./index.html">Студия</a>
+              <a class="mobile-menu__nav_link" href="./index.html">Студия</a>
             </li>
             <li class="mobile-menu__nav_margin-portfolio">
-              <a class="mobile-menu__nav_list mobile-menu__nav_list-current" href="">Портфолио</a>
+              <a class="mobile-menu__nav_link mobile-menu__nav_link-current" href="">Портфолио</a>
             </li>
             <li>
-              <a class="mobile-menu__nav_list" href="">Контакты</a>
+              <a class="mobile-menu__nav_link" href="">Контакты</a>
             </li>
-          </ul>
+          </ul>       
+          </nav>
+
+          <div class="mobile-menu__item">
+
           <ul class="mobile-menu_contacts">
             <li class="mobile-menu_contacts_margin-between">
               <a class="mobile-menu__contacts_phone" href="mailto:info@devstudio.com">
@@ -95,8 +101,9 @@
                 info@devstudio.com</a>
             </li>
           </ul>
+
           <ul class="mobile-menu__social">
-            <li class="mobile-menu__social_border">
+            <li class="mobile-menu__social_border-first">
               <a class="mobile-menu__social_list" href="">Instagram</a>
             </li>
             <li class="mobile-menu__social_border">
@@ -110,8 +117,10 @@
             </li>
           </ul>
         </div>
+        </div>
       </div>
     </header>
+
     <main>
       <section class="portfolio section">
         <div class="container">
@@ -505,6 +514,7 @@
         </div>
       </section>
     </main>
+    
     <footer class="footer"> 
       <div class="footer__box container">  
         <div class="footer__adress"> 
